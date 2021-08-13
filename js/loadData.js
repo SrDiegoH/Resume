@@ -4,12 +4,10 @@ var isMenuOpen = false;
 var shouldTranslate = false;
 var isAllTagsChecked = false;
 
-var baseGithubURL = "https://raw.githubusercontent.com/SrDiegoH/Resume/master/resources/";
-
 var tags = {};
 
 function loadDataAndWriteOnPage(){
-    const jsonDataURL = `${baseGithubURL}data/${shouldTranslate? "resume_data_en" : "resume_data_pt"}.json`;
+    const jsonDataURL = `https://raw.githubusercontent.com/SrDiegoH/Resume/master/resources/data/${shouldTranslate? "resume_data_en" : "resume_data_pt"}.json`;
     const jsonDataRequest = httpGetRequest(jsonDataURL);
 
     resumeData = JSON.parse(jsonDataRequest);
@@ -43,12 +41,12 @@ function loadTitle(data){
 
 function loadAboutMe(data){
     let text = `<h3>${translate("SOBRE MIM")}</h3>`;
-    text += `<label><img src='${baseGithubURL}assets/birth_date.png'/>${data.birth_date}</label></br>`;
-    text += `<label><img src='${baseGithubURL}assets/zap.png'/>${data.phones}</label></br>`;
-    text += `<label class='about-me-small-text'><img src='${baseGithubURL}assets/email.png'/>${data.emails}</label></br>`;
-    text += `<label class='about-me-small-text'><img class='about-me-small-icon' src='${baseGithubURL}assets/local.png'/>${data.address}</label></br>`;
-    text += `<label><img src='${baseGithubURL}assets/github.png'/><a href='${data.github}' target='_blank'>GitHub</a></label></br>`;
-    text += `<label><img src='${baseGithubURL}assets/linkedin.png'/><a href='${data.linkedin}' target='_blank'>LinkedIn</a></label>`;
+    text += `<label><img src='./resources/assets/birth_date.png'/>${data.birth_date}</label></br>`;
+    text += `<label><img src='./resources/assets/zap.png'/>${data.phones}</label></br>`;
+    text += `<label class='about-me-small-text'><img src='./resources/assets/email.png'/>${data.emails}</label></br>`;
+    text += `<label class='about-me-small-text'><img class='about-me-small-icon' src='./resources/assets/local.png'/>${data.address}</label></br>`;
+    text += `<label><img src='./resources/assets/github.png'/><a href='${data.github}' target='_blank'>GitHub</a></label></br>`;
+    text += `<label><img src='./resources/assets/linkedin.png'/><a href='${data.linkedin}' target='_blank'>LinkedIn</a></label>`;
 
     document.getElementById("about_me").innerHTML = text;
 }
@@ -82,7 +80,7 @@ function loadLanguages(data){
 
         for(var i = 0; i < 3; i++){
             const iconName = i <= item.level - 1? "star_yellow" : "star_white";
-            text += `<img src='${baseGithubURL}assets/${iconName}.png'/>`;
+            text += `<img src='./resources/assets/${iconName}.png'/>`;
         }
 
         text += `</td></tr>`;

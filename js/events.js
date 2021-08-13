@@ -30,12 +30,12 @@ function openAndCloseMenu(event) {
     const menu = document.getElementById("menu");
 
     if(isMenuOpen) {
-        menuIcon.src = `${baseGithubURL}assets/%2B_icon.png`;
+        menuIcon.src = `./resources/assets/%2B_icon.png`;
         menu.style.visibility="hidden";
 
         closeTags();
     } else {
-        menuIcon.src = `${baseGithubURL}assets/x_icon.png`;
+        menuIcon.src = `./resources/assets/x_icon.png`;
         menu.style.visibility="visible";
     }
 
@@ -49,7 +49,7 @@ function changeTranslation(event){
     shouldTranslate = translateToggle.checked;
     
     const iconName = shouldTranslate? "BRL_icon" : "USA_icon";
-    translateIcon.src = `${baseGithubURL}assets/${iconName}.png`;
+    translateIcon.src = `./resources/assets/${iconName}.png`;
 
     loadDataAndWriteOnPage();
     loadTagsText();
