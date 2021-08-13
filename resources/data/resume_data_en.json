@@ -1,0 +1,2317 @@
+{
+  "name": "Diego Henrique Cardoso de Azevedo",
+  "office": "Software Engineer",
+  "about_me": {
+    "birth_date": "08/07/1996",
+    "phones": ["+55 (81) 9.9534-7756"],
+    "emails": ["diegohenrique4222@gmail.com"],
+    "address": "Av. Guararapes, Jardim  Atlântico. Olinda, PE, 53140-060. Brazil",
+    "github": "https://github.com/SrDiegoH",
+    "linkedin": "https://www.linkedin.com/in/diego-cardoso-011643152"
+  },
+  "interesses": ["Games", "Animals", "Books", "Technology", "Movies", "Coffee"],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "level": 3
+    },
+    {
+      "language": "English",
+      "level": 3
+    }
+  ],
+  "skills": [
+    "Ability to quickly create and apply ideas and solutions",
+    "Focused and resilient",
+    "Teamwork skills",
+    "Fast Learner"
+  ],
+  "technical_proficiencies": [
+    {
+      "description": "SO",
+      "skills": [
+        "Windows (server and desktop)",
+        "Linux (Ubuntu, Xubuntu, Mate and CentOS)"
+      ]
+    },
+    {
+      "description": "Database",
+      "skills": ["SQL Server", "MySQL", "Postgre (+Timescale)", "Oracle"]
+    },
+    {
+      "description": "Paradigms",
+      "skills": ["Procedural", "POO", "Functional", "Others"]
+    },
+    {
+      "description": "Platforms",
+      "skills": [
+        "Desktop",
+        "Mobile (Android and Flutter)",
+        "Web",
+        "Cloud Computing (AWS)"
+      ]
+    },
+    {
+      "description": "Languages",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript (+TypeScript)",
+        "PHP",
+        "Java (+Scala and Groovy)",
+        "Ruby",
+        "VB (6 and .NET)",
+        "C/C++",
+        "C# (.NET)",
+        "Python ",
+        "Others"
+      ]
+    }
+  ],
+  "career_goal": "To be able to work for an encouraging and stable company that will assist me in developing, improving and obtaining the necessary skills in order to become the best professional possible.",
+  "professional_experiences": [
+    {
+      "company": "SYSTI",
+      "activities" : [
+        {
+          "start_date": "01/12/2014",
+          "end_date": "01/03/2015",
+          "office": "Software Developer Internship",
+          "description": "Websites development and maintenance using HTML, ASP, CSS, JavaScript, PHP, Visual Basic and Database manipulation with SQLServer."
+        }
+      ]
+    },
+    {
+      "company": "Igreja Assembléia de Deus",
+      "activities" : [
+        {
+          "start_date": "01/05/2016",
+          "end_date": "01/01/2017",
+          "office": "Software Developer Internship",
+          "description": "Development and maintenance of websites using HTML, CSS, JavaScript, Java PrimeFaces, JavaServer Faces. Database manipulation with SQLServer. Development/maintenance of reports with Crystal Reports and JasperReports."
+        },
+        {
+          "start_date": "01/02/2017",
+          "end_date": "01/02/2018",
+          "office": "Junior Software Developer",
+          "description": "Team coordinator. Development and maintenance of websites using HTML, CSS, JavaScript, Java PrimeFaces, JavaServer Faces. Database manipulation with SQLServer. Development/maintenance of reports with Crystal Reports and JasperReports."
+        }
+      ]
+    },
+    {
+      "company": "Neurotech",
+      "activities" : [
+        {
+          "start_date": "01/02/2018",
+          "end_date": "01/03/2019",
+          "office": "Junior Software Analyst - Gateway",
+          "description": "Analysis, creation and manipulation of projects that use web services (webpages, soap/rest and others). Web Crawlers/Web Bots."
+        },
+        {
+          "start_date": "01/03/2019",
+          "end_date": "01/03/2020",
+          "office": "Junior Software Analyst",
+          "description": "Analysis, creation and manipulation web services (soap and rest). Development and maintenance of websites using HTML, CSS, JavaScript, JSP/JSTL, Spring Boot. Database manipulation with SQLServer, MySQL and Oracle. Maintenance and manipulation of AWS services and infrastructure."
+        }
+      ]
+    },
+    {
+      "company": "iFood",
+      "activities" : [
+        {
+          "start_date": "01/03/2020",
+          "end_date": null,
+          "office": "Software Engineer",
+          "description": "Analysis, creation and manipulation of microservices and monoliths with Spring boot and NodeJs. Messaging transactions with SQS, SNS and Kafka. Database manipulation with PostgresSQL. Maintenance and manipulation of AWS services and infrastructure."
+        }
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "type": "Bachelor Degree",
+      "educational_institution": "Faculdade Nova Roma",
+      "start_date": "01/02/2014",
+      "end_date": "01/06/2018",
+      "course": "Bachelor of Computer science"
+    }
+  ],
+  "courses": [
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Fundamentos de Agilidade seus primeiros passos para a transformação ágil",
+      "tags": [
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "CertiProf",
+      "start_date": null,
+      "end_date": "01/09/2020",
+      "course": "Kanban Foundation (KIKF)",
+      "tags": [
+        "Kanban",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Kanban parte 1 Fundamentos Essenciais",
+      "tags": [
+        "Kanban",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Kanban parte 2 Métricas e Práticas Avançadas",
+      "tags": [
+        "Kanban",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "CertiProf",
+      "start_date": null,
+      "end_date": "01/06/2020",
+      "course": "Scrum Foundations Professional Certificate (SFPC)",
+      "tags": [
+        "Scrum",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Scrum Agilidade em seu projeto",
+      "tags": [
+        "Scrum",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Scrum parte 1 Gerencie o seu projeto de forma ágil",
+      "tags": [
+        "Scrum",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Scrum Parte 2 O Manifesto Ágil, Liderança e Organização em Scrum",
+      "tags": [
+        "Scrum",
+        "Agile"
+      ]
+    },
+    {
+      "educational_institution": "CertiProf",
+      "start_date": null,
+      "end_date": "01/01/2021",
+      "course": "Remote Work and Virtual Collaboration Certificate (RWVCPC)",
+      "tags": [
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Amazon Web Services",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon API Gateway Integrando e protegendo serviços",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon Cloud Front e Route53 Distribua os seus arquivos e crie seu próprio domínio",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon CloudWatch: Visibilidade completa das aplicações e serviços na nuvem",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon EC2: Faça um deploy da sua webapp com alta disponibilidade e escalabilidade",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon ECS: Gerencie Docker na nuvem da AWS",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon EKS Gerenciando aplicações conteinerizadas com Kubernetes",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon Elastic Beanstalk Parte 1: Container Docker",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon Elastic Beanstalk Parte 2: Múltiplos containers e NGINX",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon Lambda: Primeiros passos à execução de código sem servidor",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon Lightsail Descomplicando a nuvem",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon S3: Manipule e armazene objetos na nuvem",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Amazon VPC Provisione uma nuvem privada",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Deploy no Amazon EC2 Alta disponibilidade e escalabilidade de uma aplicação",
+      "tags": [
+        "DevOps",
+        "AWS",
+        "Cloud"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Ant",
+      "tags": [
+        "DevOps",
+        "Apache",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Camel",
+      "tags": [
+        "DevOps",
+        "Apache",
+        "Messaging",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Ivy",
+      "tags": [
+        "DevOps",
+        "Apache",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Maven",
+      "tags": [
+        "DevOps",
+        "Apache",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Porto Digital",
+      "start_date": null,
+      "end_date": "01/12/2015",
+      "course": "Android",
+      "tags": [
+        "Mobile",
+        "Android"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Blockchain Aumente a confiança da sua aplicação",
+      "tags": [
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Expert em Orientação a Objetos",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/07/2021",
+      "course": "Formação Arquitetura e Design de projetos Java",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Design Patterns Java I: Boas práticas de programação",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Design Patterns Java II: Boas práticas de programação",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Microsoft Virtual Academy",
+      "start_date": null,
+      "end_date": "01/09/2013",
+      "course": "Fundamentos do desenvolvimento de software em C#",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Novidades Java Produtividade com novos recursos",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Orientação a Objetos Melhores técnicas com Java",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Refatoração em Java: Boas práticas no seu código",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "SOLID com Java: Orientação a Objetos com Java",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "SOLID com Java Princípios da programação orientada a objetos",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Java e Clean Architecture Descomplicando arquitetura de software",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/07/2021",
+      "course": "Java e Domain Driven Design Apresentando os conceitos",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Design Patterns em Java I Introdução às boas práticas de programação",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Design Patterns em Java II Avançando nas boas práticas de programação",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/07/2021",
+      "course": "PHP e Clean Architecture Descomplicando arquitetura de software",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/07/2021",
+      "course": "PHP e Domain Driven Design Apresentando os conceitos",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Data Science",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Porto Digital",
+      "start_date": null,
+      "end_date": "01/07/2019",
+      "course": "Big data",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Business Intelligence: Introdução à inteligência empresarial",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data analysis: introdução a séries temporais e análises",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: A coleta de dados",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: Introdução a análise de séries temporais",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: Introdução a testes estatísticos com Python",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: Modelos de regressão por baixo dos panos",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: O pipeline dos dados",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: Preparação e exploração dos dados",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Science: Primeiros passos",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/04/2020",
+      "course": "Data Science: Visualização de dados com Python",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Visualization parte 1: introdução ao design de gráficos",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Data Visualization parte 2: Escolhendo o melhor gráfico",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Estatística I Entenda seus dados com R",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Estatística II Aprofundando em hipóteses e correlações",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Data Science Academy",
+      "start_date": null,
+      "end_date": "01/08/2020",
+      "course": "Introdução à Ciência de Dados 2.0",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "OLAP com Pentaho Construção do Data Mart",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Python Pandas Tratando e analisando dados",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Regressão Linear: Testando Relações e Prevendo Resultados",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Regressão Linear: Técnicas Avançadas de Modelagem",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Data Science Academy",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "Big Data Fundamentos 2.0",
+      "tags": [
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "CertiProf",
+      "start_date": null,
+      "end_date": "01/08/2020",
+      "course": "DevOps Essentials Professional Certificate (DEPC)",
+      "tags": [
+        "DevOps"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Jenkins e Docker: Pipeline de entrega continua",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "Gitlab CI e Docker Pipeline de entrega contínua",
+      "tags": [
+        "DevOps",
+        "Git",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Jenkins Integração contínua",
+      "tags": [
+        "DevOps"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Docker: Criando containers sem dor de cabeça",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/04/2020",
+      "course": "Docker do Zero à Maestria: Contêinerização Desmistificada",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/08/2020",
+      "course": "Docker Mastery with Kubernetes +Swarm from a Docker Captain",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Docker Swarm Orquestrador de containers",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Kubernetes Introdução a orquestração de containers",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/09/2020",
+      "course": "Kubernetes Mastery HandsOn Lessons From A Docker Captain",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Kubernetes: Orquestração de containers",
+      "tags": [
+        "DevOps",
+        "Docker"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/05/2021",
+      "course": "Elasticsearch Pesquisando e analisando os seus dados",
+      "tags": [
+        "DB",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/05/2021",
+      "course": "Elasticsearch análise, consultas e dashboard",
+      "tags": [
+        "DB",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Flutter",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Comunicação HTTP Flutter com web API",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android",
+        "Web Service"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Criando widgets, páginas e navegação com Flutter",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Flutter com web API: Integrando sua App Mobile",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android",
+        "Front end"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/05/2020",
+      "course": "Flutter Essencial",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Fundamentos de Flutter: Crie o seu primeiro App",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Persistência com Flutter Crie um app com armazenamento interno",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android",
+        "DB",
+        "Back end"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Testes de unidade e Widget com mocks Boas práticas no Flutter",
+      "tags": [
+        "Mobile",
+        "Flutter",
+        "Android",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Git e Github: Controle e compartilhe seu código",
+      "tags": [
+        "DevOps",
+        "Git"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Git e Github Estratégias de ramificação, Conflitos e Pull Requests",
+      "tags": [
+        "DevOps",
+        "Git"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Machine Learning",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/04/2020",
+      "course": "Artificial Intelligence and Predictive Analysis using Python",
+      "tags": [
+        "Data Science",
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Classificação de imagens com Keras: visão computacional",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Classificação multilabel de textos: múltiplos contextos em NLP",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Deep Learning parte 1: Introdução com Keras",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Deep Learning parte 2: Como a rede aprende",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/07/2019",
+      "course": "Inteligência artificial para iniciantes",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Linguagem Natural parte 1 Introdução a NLP com análise de sentimento",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Linguagem Natural parte 2 Continuando com a análise de sentimento",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning Aprendizado supervisionado",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning Avançando com tipos diferentes de classificação",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning Classificação por trás dos panos",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning: Intro a sistemas de recomendação em Python",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning Introdução a algoritmos não supervisionados",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning: Introdução a classificação com SKLearn",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning parte 1: Otimização de modelos através de hiperparâmetros",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning parte 2: Otimização com exploração aleatória",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Machine Learning Validação de modelos",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Regressão Implemente uma rede neural com numpy",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Visão Computacional: Processamento de imagens",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/07/2021",
+      "course": "Image Processing on Raspberry Pi: Beginner to Advanced",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "educational_institution": "Nova Futura",
+      "start_date": null,
+      "end_date": "01/10/2020",
+      "course": "Iniciantes no Mercado Financeiro",
+      "tags": [
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Nova Futura",
+      "start_date": null,
+      "end_date": "01/10/2020",
+      "course": "Saindo da Poupança",
+      "tags": [
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Automação residencial parte 1 Integrando sensores no Home Assistant",
+      "tags": [
+        "IoT",
+        "Messaging"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Automação residencial parte 2 Aplicando regras, ações e triggers",
+      "tags": [
+        "IoT",
+        "Messaging"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Internet das coisas Seu assistente pessoal em Python",
+      "tags": [
+        "IoT"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Integração de Aplicações Java",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2020",
+      "course": "Avançando com Microservices: Circuit Breaker, Hystrix e API Gateway",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "JAX RS e Jersey: Domine a criação de webservices REST",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "JAX WS: Domine a criação de webservices SOAP",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "JMS e ActiveMQ Mensageria com Java",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web",
+        "Messaging"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2020",
+      "course": "Microservices com Spring Cloud: Registry, Config Server e Distributed Tracing",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Spring Boot Agilidade no desenvolvimento java com Spring",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Spring Boot Parte 1 Construa uma API Rest",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Spring Boot Parte 2 Segurança da API, Cache e Monitoramento",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Spring MVC É hora de criar uma webapp com Spring MVC4",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Spring MVC I Criando aplicações web",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Spring MVC II Integração, cache, segurança e templates",
+      "tags": [
+        "Software Development",
+        "Security"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Swagger parte 1 Crie uma documentação APIs REST",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2020",
+      "course": "Swagger parte 2 customizando uma API gerada",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Fundação Bradesco",
+      "start_date": null,
+      "end_date": "01/09/2017",
+      "course": "Introdução a Javascript",
+      "tags": [
+        "Software Development",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "NestJS Criando uma API Rest com TypeScript",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "TypeScript parte 1 Evoluindo seu Javascript",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "TypeScript parte 2 Mais técnicas e boas práticas",
+      "tags": [
+        "Software Development",
+        "Web Service",
+        "Web",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/08/2020",
+      "course": "Apache Kafka para Iniciantes",
+      "tags": [
+        "Apache",
+        "Web",
+        "Messaging"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/10/2020",
+      "course": "Apache Kafka Series: Kafka Connect Hands on Learning",
+      "tags": [
+        "Apache",
+        "Web",
+        "Messaging"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/04/2020",
+      "course": "Guia do MongoDB (Google Cloud, NoSQL, Alta disponibilidade)",
+      "tags": [
+        "DB",
+        "MongoDB"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Modelagem MongoDB: relacionamentos e cardinalidade",
+      "tags": [
+        "DB",
+        "MongoDB"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "MongoDB: Modelagem de dados",
+      "tags": [
+        "DB",
+        "MongoDB"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "MongoDB: Uma alternativa aos bancos relacionais tradicionais",
+      "tags": [
+        "DB",
+        "MongoDB"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Curso Completo de Banco de Dados Oracle SQL e PL/SQL",
+      "tags": [
+        "DB"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/03/2020",
+      "course": "OpenCV e Python: Do básico ao intermediário",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "IA"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/07/2019",
+      "course": "Python 3: Do iniciante ao avançado!",
+      "tags": [
+        "Software Development",
+        "Back end"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/02/2020",
+      "course": "Python do básico ao avançado + inteligência artificial",
+      "tags": [
+        "Software Development",
+        "Back end",
+        "IA"
+      ]
+    },
+    {
+      "educational_institution": "Data Science Academy",
+      "start_date": null,
+      "end_date": "01/02/2021",
+      "course": "Python Fundamentos para Análise de Dados",
+      "tags": [
+        "Software Development",
+        "Data Science"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Segurança de Aplicações",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "educational_institution": "CertiProf",
+      "start_date": null,
+      "end_date": "01/01/2021",
+      "course": "Cyber Security Foundation (CSFPC)",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Segurança de redes Conheça as vulnerabilidades de servidores e clientes",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Segurança de redes Crie um firewall com pfSense e iptables",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Segurança web em Java: Evitando SQL Injection, força bruta e outros ataques",
+      "tags": [
+        "Security",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Segurança web em Java parte 2: XSS, Mass Assignment e Uploads de arquivos!",
+      "tags": [
+        "Security",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Segurança Web Vulnerabilidades do seu sistema e OWASP",
+      "tags": [
+        "Security",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/12/2020",
+      "course": "Web Application Security for Absolute Beginners (no coding!)",
+      "tags": [
+        "Security",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Shell Scripting parte 1 Começando seus scripts de automação de tarefas",
+      "tags": [
+        "Others",
+        "Shell script"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Shell Scripting parte 2 Fazendo monitoramento, agendando tarefas e backup",
+      "tags": [
+        "Others",
+        "Shell script"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/01/2021",
+      "course": "Instant Test Driven Development with Java, JUnit and Mockito",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/01/2021",
+      "course": "JUnit and Mockito Crash Course",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Udemy",
+      "start_date": null,
+      "end_date": "01/12/2020",
+      "course": "Learn Java Unit Testing with Junit Mockito in 30 Steps",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Mocks em Java: Testes de comportamentos automatizados",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Rest Assured Testes automatizado de webservice",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/12/2019",
+      "course": "Selenium Sua webapp testada de ponta a ponta em java",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Teste de Integração: Testes SQL e DAOs automatizados em java",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Testes automatizados TDD com Python",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/15/2018",
+      "course": "Testes: TDD com Java",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "TDD e Java Testes automatizados com JUnit",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Selenium Testes automatizados de aceitação em Java",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "BDD e Java Behavior Driven Development com Cucumber",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Testes de Integração Testes de SQL e DAOs automatizados em Java",
+      "tags": [
+        "Software Development",
+        "Good pratices",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação UX Design",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Formação Acessibilidade Web",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Acessibilidade Web introdução a designs inclusivos",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Acessibilidade Web parte 1: tornando seu front end inclusivo",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Acessibilidade Web parte 2: Componentes acessíveis com um pouco de JavaScript",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Prototipagem e UX parte 1: Alta fidelidade com o Adobe XD",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Prototipagem e UX parte 2: linkando telas no Adobe XD",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Revisão UX: ferramentas do briefing ao protótipo",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Teste de usabilidade parte 1: Seu produto é fácil de usar",
+      "tags": [
+        "Front end",
+        "UX",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Teste de Usabilidade parte 2: Mensurando e entregando resultados",
+      "tags": [
+        "Front end",
+        "UX",
+        "Tests"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UI Design Patterns: Usabilidade em interfaces mobile",
+      "tags": [
+        "Front end",
+        "UX",
+        "Good pratices"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX Mitos: Os erros frequentes de usabilidade e as boas práticas",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX: O que é experiência de usuário",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX: Produto monitore, mensure e teste o seu projeto",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX Strategy: Divergindo e afunilando ideias",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX Usability: Facilite a vida do seu usuário no mobile",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "UX Writing: Conteúdo focado no usuário",
+      "tags": [
+        "Front end",
+        "UX"
+      ]
+    },
+    {
+      "educational_institution": "Fundação Bradesco",
+      "start_date": null,
+      "end_date": "01/09/2017",
+      "course": "HTML Avançado",
+      "tags": [
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Fundação Bradesco",
+      "start_date": null,
+      "end_date": "01/09/2017",
+      "course": "HTML Básico",
+      "tags": [
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Microsoft Virtual Academy",
+      "start_date": null,
+      "end_date": "01/08/2013",
+      "course": "HTML5 e CSS3 Homologado pela W3C",
+      "tags": [
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/04/2018",
+      "course": "HTTP: Entendendo a web por baixo dos panos",
+      "tags": [
+        "Web",
+        "Web Service"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Performance Web I otimizando o front end",
+      "tags": [
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Performance Web II: Critical Path, HTTP/2 e Resource Hints",
+      "tags": [
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Progressive Web Apps crie apps offline",
+      "tags": [
+        "Web",
+        "Mobile"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/01/2020",
+      "course": "Web Design Responsivo Páginas que se adaptam do mobile ao desk",
+      "tags": [
+        "Front end",
+        "Web"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Comunicação Como se expressar bem e ser compreendido",
+      "tags": [
+        "Communication",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Comunicação não violenta Consciência para agir",
+      "tags": [
+        "Communication",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Comunicação não violenta parte 2 Mantendo a empatia",
+      "tags": [
+        "Communication",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Comunicação Assertiva Reduzindo conflitos e frustrações",
+      "tags": [
+        "Communication",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Feedback a arte de orientar e ser orientado com sentido",
+      "tags": [
+        "Communication",
+        "Others"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Formação Raspberry Pi",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi parte 1 Da instalação ao Media Center",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi parte 2 Controlando o mundo com GPIO",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi parte 3 Carro espião com câmera wifi e sensor",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi Servidor Montando um servidor para desenvolvimento",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi Servidor Samba, VPN, IoT e AWS S3",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi Autenticação com RFID e Dynamo DB",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Raspberry Pi Node RED Elabore aplicações conectando dispositivos e serviços",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "C I Introdução à Linguagem das Linguagens",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "C II Avançando na linguagem",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "C III Recursos avançados da linguagem",
+      "tags": [
+        "Software Development"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Formação Microcontroladores e Eletrônica aplicada",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Arduino Do zero ao jogo",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Arduino Introdução à Robótica",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "NodeMcu e Esp8266 Medindo e publicando dados com MQTT",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "Esp32 Detector de presença com Bluetooth Low Energy",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    },
+    {
+      "educational_institution": "Alura",
+      "start_date": null,
+      "end_date": "01/06/2021",
+      "course": "NodeMcu e Esp8266 Monte um brinquedo interativo para seu Pet",
+      "tags": [
+        "IoT",
+        "Electronics"
+      ]
+    }
+  ]
+}
