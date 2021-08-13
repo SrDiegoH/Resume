@@ -75,7 +75,6 @@ function downloadResume(){
     const options = {
         filename: fileName,
         pagebreak: {
-            before: "#skills",
             avoid: "#education p"
         }
     }
