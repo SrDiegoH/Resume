@@ -56,8 +56,6 @@ function changeTranslation(event){
 }
 
 function downloadResume(){
-    const headerHTML = document.head.innerHTML;
-
     const lateralInfo = document.querySelectorAll(".lateral-info")[0];
     const lateralInfoWidth = lateralInfo.style.width;
     const lateralInfoMargin = lateralInfo.style.margin;
@@ -72,14 +70,7 @@ function downloadResume(){
 
     const fileName = `${resumeData.name} - ${translate("Currículo")}.pdf`;
 
-    const options = {
-        filename: fileName,
-        pagebreak: {
-            avoid: "#education p"
-        }
-    }
-
-    html2pdf().from(resumeHTML).set(options).save();
+    html2pdf().set({ filename: fileName }).from(resumeHTML).save();
 
     setTimeout(() => {
         lateralInfo.style.width = lateralInfoWidth;
