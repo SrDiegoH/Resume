@@ -8,10 +8,6 @@ var baseGithubURL = "https://raw.githubusercontent.com/SrDiegoH/Resume/master/re
 
 var tags = {};
 
-window.onload = function () {
-    loadDataAndWriteOnPage();
-}
-
 function loadDataAndWriteOnPage(){
     const jsonDataURL = `${baseGithubURL}data/${shouldTranslate? "resume_data_en" : "resume_data_pt"}.json`;
     const jsonDataRequest = httpGetRequest(jsonDataURL);
@@ -40,6 +36,9 @@ function loadTitle(data){
     text += `</br><h3 class='dynamic-color-text'>${data.office}</h3>`;
 
     document.getElementById("title").innerHTML = text;
+
+    if(colorPallet)
+        document.querySelectorAll(".dynamic-color-text").forEach((item) => item.style.color = colorPallet);
 }
 
 function loadAboutMe(data){

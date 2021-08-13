@@ -1,4 +1,8 @@
+var colorPallet;
+
 window.onload = function () {
+    loadDataAndWriteOnPage();
+
     document.getElementById("menu_icon")
             .addEventListener("click", openAndCloseMenu);
 
@@ -26,12 +30,12 @@ function openAndCloseMenu(event) {
     const menu = document.getElementById("menu");
 
     if(isMenuOpen) {
-        menuIcon.src = `${iconBaseURL}%2B_icon.png`;
+        menuIcon.src = `${baseGithubURL}assets/%2B_icon.png`;
         menu.style.visibility="hidden";
 
         closeTags();
     } else {
-        menuIcon.src = `${iconBaseURL}x_icon.png`;
+        menuIcon.src = `${baseGithubURL}assets/x_icon.png`;
         menu.style.visibility="visible";
     }
 
@@ -45,7 +49,7 @@ function changeTranslation(event){
     shouldTranslate = translateToggle.checked;
     
     const iconName = shouldTranslate? "BRL_icon" : "USA_icon";
-    translateIcon.src = `${iconBaseURL + iconName}.png`;
+    translateIcon.src = `${baseGithubURL}assets/${iconName}.png`;
 
     loadDataAndWriteOnPage();
     loadTagsText();
@@ -123,13 +127,15 @@ function showByTag(tagToggle){
 }
 
 function colorPick(event){
+    colorPallet = event.target.value;
+
     document.querySelectorAll(".dynamic-color-background")
-            .forEach((item) => item.style.background = event.target.value);
+            .forEach((item) => item.style.background = colorPallet);
 
     document.querySelectorAll(".dynamic-color-line")
             .forEach((item) => item.style.backgroundImage = 
-            `linear-gradient(to right, transparent, ${event.target.value}, transparent)`);
+            `linear-gradient(to right, transparent, ${colorPallet}, transparent)`);
 
     document.querySelectorAll(".dynamic-color-text")
-            .forEach((item) => item.style.color = event.target.value);
+            .forEach((item) => item.style.color = colorPallet);
 }
