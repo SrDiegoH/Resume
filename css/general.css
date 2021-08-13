@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-icon {
+    position: fixed;
+    height: auto;
+}
+
+.small-icon {
+    height: auto;
+}
+
+.simple-icon {
+    height: auto;
+}
+
+.close-icon {
+    height: auto;
+    position: inherit;
+}
+
+.menu {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+}
+
+.hidden-input {
+    visibility: hidden;
+}
+
+.tags {
+    visibility: hidden;
+    position: fixed;
+    background-color: #000000D5;
+    border-radius: 30px;
+    color: #FFF;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+}
+
+.tags h2 {
+    text-align: center;
+}
+
+.tag, .tag::after, .tag::before {
+    box-sizing: border-box;
+}
+
+.tag {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+    padding: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+}
+
+.tag::before, .tag::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: left .15s cubic-bezier(.25, .8, .25, .1), transform .15s ease-in;
+}
+
+.tag::before {
+    background-color: #CCC;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+}
+
+.tag::after {
+    margin: 2px 0 0 2px;
+    background: #FFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow: 0 1px 2px #000;
+}
+
+.tag:checked::before {
+    background-color: #61DAFB;
+}
+
+.tag:checked::after {
+    left: 24px;
+}
+
+.tag:active::after {
+    transform: scale(1.15, 0.85);
+}
+
+#resume {
+    display: flex;
+}
+
+.lateral-info {
+    color: #FFF;
+}
+
+.lateral-info h3 {
+    text-align: center;
+}
+
+#about_me label {
+    display: inline-flex;
+}
+
+#about_me a {
+    color: #FFF;
+    text-decoration: underline; 
+}
+
+#interests td {
+    text-align: center;
+}
+
+#languages td {
+    text-align: center;
+}
+
+#languages img {
+    vertical-align: text-bottom;
+}
+
+#skills td {
+    text-align: center;
+}
+
+.technical-proficiencies-description {
+    font-weight: bold;
+}
+
+.main-info {
+    flex: 1;
+}
+
+.main-info p {
+    text-align: justify;
+}
+
+.main-info h5 {
+    text-align: left;
+    font-weight: normal;
+}
+
+#title h2, #title h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.line-separator {
+    border: 0;
+    height: 2px;
+}
+
+#objective h3, #experiences h3, #experiences h4, #education h4, #education h3 {
+    text-align: left;
+}
+
+.dynamic-color-background {
+    background-color: #329223;
+}
+
+.dynamic-color-line {
+    background-image: linear-gradient(to right, transparent, #329223, transparent);
+}
+
+.dynamic-color-text {
+    color: #329223;
+}
+
+#select_all_tags {
+    display: inline-block;
+    padding: 1%;
+    font-size: 125%;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    color: #FFF;
+    background-color: #61DAFB;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    width: 27%;
+    margin-bottom: 2%;
+}
+
+#select_all_tags:hover {
+    background-color: #71DFFD;
+}
+
+#select_all_tags:active {
+    background-color: #81E1FC;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

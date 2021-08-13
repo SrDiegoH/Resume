@@ -133,9 +133,6 @@ function loadExperiences(data){
     let text = `<h3>${translate("EXPERIÊNCIAS PROFISSIONAIS")}</h3>`;
 
     for(item of data){
-
-        text += "</br>";
-
         text += `<h4>${item.company}</h4>`;
 
         for (subitem of item.activities){
