@@ -3,29 +3,11 @@ var resumeData;
 var isMenuOpen = false;
 var shouldTranslate = false;
 var isAllTagsChecked = false;
-
+var iconBaseURL = "https://raw.githubusercontent.com/SrDiegoH/Resume/master/resources/assets/";
 var tags = {};
-
-const translations = {
-    "SOBRE MIM" : "ABOUT ME",
-    "INTERESSES" : "INTERESTS",
-    "LÍNGUAS" : "LANGUAGES",
-    "COMPETÊNCIAS" : "SKILLS",
-    "HABILIDADES TÉCNICAS" : "TECHNICAL PROFICIENCIES",
-    "OBJETIVO DE CARREIRA" : "CAREER  OBJECTIVE",
-    "EXPERIÊNCIAS PROFISSIONAIS" : "PROFESSIONAL EXPERIENCES",
-    "EDUCAÇÃO" : "EDUCATION",
-    "CURSOS E CERTIFICADOS" : "COURSES AND CERTIFICATES",
-    "Selecione os cursos pela tag": "Select courses by tags",
-    "atualmente" : "currently",
-    "Currículo" : "Resume",
-    "Marcar todos" : "Select All",
-    "Desmarcar todos" : "Unselect All"
-}
 
 window.onload = function () {
     loadDataAndWriteOnPage();
-    changePageName();
 
     document.getElementById("menu_icon")
             .addEventListener("click", openAndCloseMenu);
@@ -50,7 +32,11 @@ window.onload = function () {
 }
 
 function loadDataAndWriteOnPage(){
-    resumeData = fetch("./json_curriculo.json").then((data) => data.json());
+    const requestJsonData = httpGetRequest("https://raw.githubusercontent.com/SrDiegoH/Resume/master/resources/data/resume_data.json");
+
+    resumeData = JSON.parse(requestJsonData);
+
+    changePageName(resumeData.name);
 
     loadTitle(resumeData);
     loadAboutMe(resumeData.about_me);
@@ -63,6 +49,10 @@ function loadDataAndWriteOnPage(){
     loadEducation(resumeData);
 }
 
+function changePageName(data){
+    document.title = data;
+}
+
 function loadTitle(data){
     let text = `<h2 class='dynamic-color-text'>${data.name}</h2>`;
     text += `</br><h3 class='dynamic-color-text'>${data.office}</h3>`;
@@ -72,12 +62,12 @@ function loadTitle(data){
 
 function loadAboutMe(data){
     let text = `<h3>${translate("SOBRE MIM")}</h3>`;
-    text += `<label><img src='./resources/assets/birth_date.png'/>${data.birth_date}</label></br>`;
-    text += `<label><img src='./resources/assets/zap.png'/>${data.phones}</label></br>`;
-    text += `<label class='about-me-small-text'><img src='./resources/assets/email.png'/>${data.emails}</label></br>`;
-    text += `<label class='about-me-small-text'><img class='about-me-small-icon' src='./resources/assets/local.png'/>${data.address}</label></br>`;
-    text += `<label><img src='./resources/assets/github.png'/><a href='${data.github}' target='_blank'>GitHub</a></label></br>`;
-    text += `<label><img src='./resources/assets/linkedin.png'/><a href='${data.linkedin}' target='_blank'>LinkedIn</a></label>`;
+    text += `<label><img src='${iconBaseURL}birth_date.png'/>${data.birth_date}</label></br>`;
+    text += `<label><img src='${iconBaseURL}zap.png'/>${data.phones}</label></br>`;
+    text += `<label class='about-me-small-text'><img src='${iconBaseURL}email.png'/>${data.emails}</label></br>`;
+    text += `<label class='about-me-small-text'><img class='about-me-small-icon' src='${iconBaseURL}local.png'/>${data.address}</label></br>`;
+    text += `<label><img src='${iconBaseURL}github.png'/><a href='${data.github}' target='_blank'>GitHub</a></label></br>`;
+    text += `<label><img src='${iconBaseURL}linkedin.png'/><a href='${data.linkedin}' target='_blank'>LinkedIn</a></label>`;
 
     document.getElementById("about_me").innerHTML = text;
 }
@@ -110,8 +100,8 @@ function loadLanguages(data){
         text += `<tr><td>${item.language}</td><td>`;
 
         for(var i = 0; i < 3; i++){
-            const starImage = i <= item.level - 1? "star_yellow.png" : "star_white.png";
-            text += `<img src='./resources/assets/${starImage}'/>`;
+            const iconName = i <= item.level - 1? "star_yellow" : "star_white";
+            text += `<img src='${iconBaseURL + iconName}.png'/>`;
         }
 
         text += `</td></tr>`;
@@ -209,21 +199,18 @@ function loadEducation(data){
     document.getElementById("education").innerHTML = text;
 }
 
-function changePageName(){
-    document.title = resumeData.name;
-}
 
 function openAndCloseMenu(event) {
     const menuIcon = event.target;
     const menu = document.getElementById("menu");
 
     if(isMenuOpen) {
-        menuIcon.src = "./resources/assets/+_icon.png";
+        menuIcon.src = `${iconBaseURL}%2B_icon.png`;
         menu.style.visibility="hidden";
 
         closeTags();
     } else {
-        menuIcon.src = "./resources/assets/x_icon.png";
+        menuIcon.src = `${iconBaseURL}x_icon.png`;
         menu.style.visibility="visible";
     }
 
@@ -235,8 +222,9 @@ function changeTranslation(event){
     const translateToggle = event.target;
 
     shouldTranslate = translateToggle.checked;
-
-    translateIcon.src = shouldTranslate? "./resources/assets/BRL_icon.png" : "./resources/assets/USA_icon.png";
+    
+    const iconName = shouldTranslate? "BRL_icon" : "USA_icon";
+    translateIcon.src = `${iconBaseURL + iconName}.png`;
 
     loadDataAndWriteOnPage();
     loadTagsText();
@@ -323,22 +311,4 @@ function colorPick(event){
 
     document.querySelectorAll(".dynamic-color-text")
             .forEach((item) => item.style.color = event.target.value);
-}
-
-function translate(text){
-    return shouldTranslate? translations[text] : text;
-}
-
-function convertToMonthAndYear(date) {
-    const splittedDate = date.split("/");
-
-    const haveDay = splittedDate.length == 3;
-
-    const month = splittedDate[haveDay? 1 : 0];
-    const year = splittedDate[haveDay? 2 : 1];
-    return month + "/" + year;
-}
-
-function selectAllTagsText(isChecked){
-    return translate(isChecked? "Desmarcar todos" : "Marcar todos");
 }
