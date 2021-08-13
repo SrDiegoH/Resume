@@ -38,7 +38,7 @@ function loadTitle(data){
     document.getElementById("title").innerHTML = text;
 
     if(colorPallet)
-        document.querySelectorAll(".dynamic-color-text").forEach((item) => item.style.color = colorPallet);
+        document.querySelectorAll(".dynamic-color-text").forEach(item => item.style.color = colorPallet);
 }
 
 function loadAboutMe(data){

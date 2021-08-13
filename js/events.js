@@ -56,11 +56,37 @@ function changeTranslation(event){
 }
 
 function downloadResume(){
+    const headerHTML = document.head.innerHTML;
+
+    const lateralInfo = document.querySelectorAll(".lateral-info")[0];
+    const lateralInfoWidth = lateralInfo.style.width;
+    const lateralInfoMargin = lateralInfo.style.margin;
+    lateralInfo.style.width = "30%";
+    lateralInfo.style.margin = 0;
+
+    const mainInfo = document.querySelectorAll(".main-info")[0];
+    const mainInfoMarginRight = mainInfo.style.marginRight;
+    mainInfo.style.marginRight = "2%";
+
     const resumeHTML = document.getElementById("resume");
+
     const fileName = `${resumeData.name} - ${translate("Currículo")}.pdf`;
 
-    console.log(html2pdf().from(resumeHTML));
-    html2pdf().from(resumeHTML).set({ filename: fileName }).save();
+    const options = {
+        filename: fileName,
+        pagebreak: {
+            before: "#skills",
+            avoid: "#education p"
+        }
+    }
+
+    html2pdf().from(resumeHTML).set(options).save();
+
+    setTimeout(() => {
+        lateralInfo.style.width = lateralInfoWidth;
+        lateralInfo.style.margin = lateralInfoMargin;
+        mainInfo.style.marginRight = mainInfoMarginRight;
+    }, 1);
 }
 
 function openTags(){
@@ -130,12 +156,12 @@ function colorPick(event){
     colorPallet = event.target.value;
 
     document.querySelectorAll(".dynamic-color-background")
-            .forEach((item) => item.style.background = colorPallet);
+            .forEach(item => item.style.background = colorPallet);
 
     document.querySelectorAll(".dynamic-color-line")
-            .forEach((item) => item.style.backgroundImage = 
+            .forEach(item => item.style.backgroundImage = 
             `linear-gradient(to right, transparent, ${colorPallet}, transparent)`);
 
     document.querySelectorAll(".dynamic-color-text")
-            .forEach((item) => item.style.color = colorPallet);
+            .forEach(item => item.style.color = colorPallet);
 }
