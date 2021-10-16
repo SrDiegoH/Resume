@@ -8,12 +8,54 @@ body {
     height: auto;
 }
 
+.menu-icon:hover { 
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.menu-icon:active { 
+    transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+}
+
 .small-icon {
     height: auto;
 }
 
+.small-icon:hover { 
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.small-icon:active { 
+    transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+}
+
 .simple-icon {
     height: auto;
+}
+
+.simple-icon:hover { 
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.simple-icon:active { 
+    transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    -webkit-transform: scale(1.35);
 }
 
 .close-icon {
