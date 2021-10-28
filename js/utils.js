@@ -12,7 +12,9 @@ const translations = {
     "atualmente" : "currently",
     "Currículo" : "Resume",
     "Marcar todos" : "Select All",
-    "Desmarcar todos" : "Unselect All"
+    "Desmarcar todos" : "Unselect All",
+    "Copiado!" : "Copied!",
+    "Erro!" : "Error!"
 }
 
 function httpGetRequest(url){
@@ -38,4 +40,11 @@ function translate(text){
 
 function selectAllTagsText(isChecked){
     return translate(isChecked? "Desmarcar todos" : "Marcar todos");
+}
+
+function buildUrlWithParameters(baseUrl){
+    const language = `language=${shouldTranslate? "EN" : "PT" }`;
+    const color = `color=${colorPallet? colorPallet : "329223"}`;
+
+    return baseUrl.origin + baseUrl.pathname + "?" + language + "&" + color.replace("#", "");
 }

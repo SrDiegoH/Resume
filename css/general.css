@@ -63,6 +63,12 @@ body {
     position: inherit;
 }
 
+.tooltip {
+    display: none;
+    color: #fff;
+    border-radius: 7px;
+}
+
 .menu {
     visibility: hidden;
     display: block;

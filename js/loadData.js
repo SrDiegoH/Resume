@@ -25,6 +25,34 @@ function loadDataAndWriteOnPage(){
     loadEducation(resumeData);
 }
 
+function loadColor(){
+    if(parameters && parameters["color"]){
+        colorPallet = "#" + parameters["color"];
+        addColorToPage();
+    }
+}
+
+function loadLanguage(){
+    if(parameters && parameters["language"]){
+        shouldTranslate = parameters["language"] === "EN";
+        document.getElementById("translate_button").checked = shouldTranslate;
+        changeTranslationOnPage();
+    }
+}
+
+function getParameters(){
+    const urlParameters = window.location.search;
+    parameters =  urlParameters? convertParametersToJson(urlParameters) : {};
+}
+
+function convertParametersToJson(urlParameters){
+    return urlParameters
+        .substring(1)
+        .split("&")
+        .map(parameters => parameters.split("="))
+        .reduce((json, parameters) => { json[parameters[0]] = parameters[1]; return json; }, {});
+}
+
 function changePageName(data){
     document.title = data;
 }

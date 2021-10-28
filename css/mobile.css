@@ -12,6 +12,7 @@
 
     .simple-icon {
         width: 55%;
+        padding-top: 15%;
     }
 
     .close-icon {
@@ -20,8 +21,14 @@
         left: 93%;
     }
 
+    .tooltip {
+        margin-left: -75%;
+        padding: 5%;
+        text-size-adjust: 250%;
+    }
+
     .menu {
-        top: 49%;
+        top: 45%;
         left: 79%;
     }
 

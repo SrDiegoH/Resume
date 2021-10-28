@@ -1,10 +1,17 @@
 var colorPallet;
 
 window.onload = function () {
+    
+    getParameters();
+    loadColor();
+    loadLanguage();
     loadDataAndWriteOnPage();
 
     document.getElementById("menu_icon")
             .addEventListener("click", openAndCloseMenu);
+
+    document.getElementById("share_icon")
+            .addEventListener("click", copyLinkToClipboard);
 
     document.getElementById("translate_button")
             .addEventListener("click", changeTranslation);
@@ -42,17 +49,40 @@ function openAndCloseMenu(event) {
     isMenuOpen = !isMenuOpen;
 }
 
+function copyLinkToClipboard(){
+    let urlWithParameters = buildUrlWithParameters(window.location);
+
+    const shareIconTooltip = document.getElementById("share_icon_tooltip");
+
+    navigator.clipboard
+             .writeText(urlWithParameters)
+             .then(() => clipboardFallback(shareIconTooltip, "Copiado!", "#329223"),
+                   () => clipboardFallback(shareIconTooltip, "Erro!", "#F00000")
+             );
+}
+
+function clipboardFallback(icon, message, color){
+    icon.style.display = "inline"
+    icon.innerHTML = translate(message);
+    icon.style.background = color;
+
+    setTimeout(() => icon.style.display = "none", 1000);
+}
+
 function changeTranslation(event){
-    const translateIcon = document.getElementById("translate_icon");
     const translateToggle = event.target;
 
     shouldTranslate = translateToggle.checked;
-    
-    const iconName = shouldTranslate? "BRL_icon" : "USA_icon";
-    translateIcon.src = `./resources/assets/${iconName}.png`;
+
+    changeTranslationOnPage();
 
     loadDataAndWriteOnPage();
     loadTagsText();
+}
+
+function changeTranslationOnPage(){
+    const iconName = shouldTranslate? "BRL_icon" : "USA_icon";
+    document.getElementById("translate_icon").src = `./resources/assets/${iconName}.png`;
 }
 
 function downloadResume(){
@@ -144,7 +174,10 @@ function showByTag(tagToggle){
 
 function colorPick(event){
     colorPallet = event.target.value;
+    addColorToPage();
+}
 
+function addColorToPage(){
     document.querySelectorAll(".dynamic-color-background")
             .forEach(item => item.style.background = colorPallet);
 
