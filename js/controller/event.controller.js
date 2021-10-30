@@ -69,9 +69,12 @@ class EventController {
     #buildUrlWithParameters(baseUrl){
         const language = `shouldTranslate=${this.#parameterService.getShouldTranslate()}`;
         const color = `color=${this.#parameterService.getColor().replace("#", "")}`;
+        const tags = `tags=${this.#getAllCheckedTags()}`;
 
-        return baseUrl.origin + baseUrl.pathname + "?" + language + "&" + color;
+        return baseUrl.origin + baseUrl.pathname + "?" + language + "&" + color + "&" + tags;
     }
+
+    #getAllCheckedTags = () => this.#tagService.getAllCheckedTags();
 
     #clipboardFallback(icon, message, color){
         icon.style.display = "inline"

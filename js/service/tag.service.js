@@ -1,27 +1,37 @@
 class TagService {
     #parameterService;
 
-    #isAllTagsChecked;
+    #areAllTagsCached;
     #tags;
 
     constructor(parameterService){
         this.#parameterService = parameterService;
 
-        this.#isAllTagsChecked = false;
+        this.#areAllTagsCached = this.#parameterService.areAllTagsCached();
         this.#tags = {};
     }
 
     #translate = (text) => translate(this.#parameterService.getShouldTranslate(), text);
 
+    getAllCheckedTags() {
+        const tagNames = Object.keys(this.#tags);
+
+        const allCheckedTags = tagNames.filter(tagName => this.#tags[tagName] === true).join();
+
+        if(!allCheckedTags)
+            return ALL_TAGS;
+
+        return tagNames.length === allCheckedTags.length? ALL_TAGS : allCheckedTags;
+    }
+
     closeTags = () => document.getElementById("tags").style.visibility = "hidden";
 
     openTags(courses){
-        this.loadTagsText();
-
         document.getElementById("tags").style.visibility = "visible";
 
         this.#fillAllTags(courses);
 
+        this.loadTagsText();
         const text = this.#loadTagsOnModal();
 
         document.getElementById("tags_table").innerHTML = text;
@@ -30,15 +40,20 @@ class TagService {
     }
 
     #fillAllTags(courses){
-        const isTagsEmpty = Object.keys(this.#tags).length === 0;
+        const areTagsEmpty = Object.keys(this.#tags).length === 0;
 
-        if(isTagsEmpty) {
+        if(areTagsEmpty) {
             this.#tags = courses.reduce((tagDictionary, course) => {
-                course.tags.map(tag => tagDictionary[tag] = true);
+
+                course.tags.map(tagTarget => tagDictionary[tagTarget.toUpperCase()] = this.#isTagChecked(tagTarget));
+
                 return tagDictionary;
             }, {});
         }
     }
+
+    #isTagChecked = (tagTarget) => this.#areAllTagsCached || 
+                                   this.#parameterService.isTagInCache(tagTarget);
 
     #loadTagsOnModal(){
         const sortedTags = Object.keys(this.#tags).sort((frist, second) => sortTexts(frist, second));
@@ -64,34 +79,30 @@ class TagService {
         return text;
     }
 
-    #addEventsOnTags(){
-        const tagsByClass = document.getElementsByClassName("tag");
-
-        Object.values(tagsByClass).forEach(element => this.#addEventOnElement(element));
-    }
+    #addEventsOnTags = () => document.querySelectorAll(".tag").forEach(element => this.#addEventOnElement(element));
 
     #addEventOnElement = (element) => element.addEventListener("change", (event) => this.#showByTag(event.target), false);
 
     #selectAllTagsText = (isChecked) => this.#translate(isChecked? "Desmarcar todos" : "Marcar todos");
 
-    #renameSelectAllTagsToggle = (isAllTagsChecked) => document.getElementById("select_all_tags").value = this.#selectAllTagsText(isAllTagsChecked);
+    #renameSelectAllTagsToggle = (areAllTagsCached) => document.getElementById("select_all_tags").value = this.#selectAllTagsText(areAllTagsCached);
 
     loadTagsText(){
         document.getElementById("tags_title").innerHTML = `<h2>${this.#translate("Selecione os cursos pela tag")}</h2>`;
 
-        this.#renameSelectAllTagsToggle(!this.#isAllTagsChecked);
+        this.#renameSelectAllTagsToggle(this.#areAllTagsCached);
     }
 
     selectAndUnselectTags() {
         document.querySelectorAll(".tag")
                 .forEach(tagToggle => {
-                    tagToggle.checked = this.#isAllTagsChecked;
+                    tagToggle.checked = !this.#areAllTagsCached;
                     this.#showByTag(tagToggle);
                 });
 
-        this.#renameSelectAllTagsToggle(this.#isAllTagsChecked);
+        this.#renameSelectAllTagsToggle(this.#areAllTagsCached);
 
-        this.#isAllTagsChecked = !this.#isAllTagsChecked;
+        this.#areAllTagsCached = !this.#areAllTagsCached;
     }
 
     #showByTag(tagToggle){

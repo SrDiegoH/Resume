@@ -9,6 +9,7 @@ class PageLoaderService {
     #requestResumeData(){
         const languageTranslation = this.#parameterService.getShouldTranslate()? "en" : "pt";
         const jsonDataURL = `https://raw.githubusercontent.com/SrDiegoH/Resume/master/resources/data/resume_data_${languageTranslation}.json`;
+
         const jsonDataRequest = httpGetRequest(jsonDataURL);
 
         return JSON.parse(jsonDataRequest);
@@ -104,9 +105,7 @@ class PageLoaderService {
 
         for(const languageInfos of languages){
             text += `<tr><td>${languageInfos.language}</td><td>`;
-
             text += this.#buildStarLevel(languageInfos.level);
-
             text += `</td></tr>`;
         }
 
@@ -121,9 +120,7 @@ class PageLoaderService {
 
     #loadSkills(skills){
         let text = `<h3>${this.#translate("COMPETÊNCIAS")}</h3><table>`;
-
         text += skills.map(skill => `<tr><td>${skill}</td></tr>`).join("");
-
         text += "</table>";
 
         document.getElementById("skills").innerHTML = text;
@@ -131,10 +128,8 @@ class PageLoaderService {
 
     #loadTechnicalProficiencies(technical_proficiencies){
         let text = `<h3>${this.#translate("HABILIDADES TÉCNICAS")}</h3><table>`;
-
         text += technical_proficiencies.map(proficiency => this.#buildTechnicalProficiencies(proficiency))
                                        .join("");
-
         text += "</table>";
 
         document.getElementById("technical_proficiencies").innerHTML = text;
@@ -142,9 +137,7 @@ class PageLoaderService {
 
     #buildTechnicalProficiencies(proficiency){
         let text = `<tr><td align='right' valign='top'><div class='technical-proficiencies-description'>${proficiency.description}</div></td><td><table>`;
-
         text += this.#buildSkills(proficiency.skills);
-
         text += "</table></td></tr>";
 
         return text;
@@ -163,7 +156,6 @@ class PageLoaderService {
 
     #loadExperiences(experiences){
         let text = `<h3>${this.#translate("EXPERIÊNCIAS PROFISSIONAIS")}</h3>`;
-
         text += experiences.map(experience => this.#loadExperience(experience)).join("");
 
         document.getElementById("experiences").innerHTML = text;
@@ -171,7 +163,6 @@ class PageLoaderService {
 
     #loadExperience(experience){
         let text = `<h4>${experience.company}</h4>`;
-
         text += this.#buildActivities(experience.activities);
 
         return text;
@@ -229,10 +220,21 @@ class PageLoaderService {
         const startDate = course.start_date? convertDateToMonthAndYear(course.start_date) + " - ": "";
         const endDate = convertDateToMonthAndYear(course.end_date);
 
-        let text = `<p data-tags='${course.tags}'>`;
+        const courseTags = course.tags.map(tag => tag.toUpperCase());
+
+        let text = `<p data-tags='${courseTags}' style='display: ${this.#displayMode(courseTags)}'>`;
         text += `${course.educational_institution} - ${course.course}`;
         text += ` (${startDate + endDate})</p>`;
 
         return text;
+    }
+
+    #displayMode(tags){
+        if(this.#parameterService.areAllTagsCached())
+            return "block";
+
+        const courseHasAnyTagOnCache = this.#parameterService.arrayHasAnyTagOnCache(tags);
+
+        return courseHasAnyTagOnCache? "block" : "none";
     }
 }

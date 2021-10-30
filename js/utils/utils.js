@@ -1,3 +1,5 @@
+const ALL_TAGS = "ALL_TAGS";
+
 const translations = {
     "SOBRE MIM" : "ABOUT ME",
     "INTERESSES" : "INTERESTS",
@@ -26,6 +28,8 @@ function httpGetRequest(url){
 
 const translate = (shouldTranslate, text) => shouldTranslate? translations[text] : text;
 
+const sortTexts = (first, second) => first.localeCompare(second);
+
 const sortDates = (first, second) => convertDateToMonthAndYear(first) - convertDateToMonthAndYear(second);
 
 const validateAndReturnDate = (date, otherwiseReturn) => date? convertDateToMonthAndYear(date) : otherwiseReturn;
@@ -40,18 +44,20 @@ function convertDateToMonthAndYear(date) {
     return month + "/" + year;
 }
 
-const sortTexts = (first, second) => first.localeCompare(second);
+const convertToArray = (text) => text.split(",");
 
 function convertToBoolean(text){
     switch(text.toString().toLowerCase().trim()){
         case "true":
         case "yes":
         case "1":
+        case 1:
             return true;
 
         case "false":
         case "no":
         case "0":
+        case 0:
         case null:
         case undefined:
             return false;
@@ -59,4 +65,14 @@ function convertToBoolean(text){
         default: 
             return Boolean(text);
     }
+}
+
+function convertQueryToJson(urlQuery){
+    return urlQuery.substring(1)
+                   .split("&")
+                   .map(parameters => parameters.split("="))
+                   .reduce((json, parameterCouple) => {
+                       json[parameterCouple[0]] = parameterCouple[1];
+                       return json;
+                   }, {});
 }
