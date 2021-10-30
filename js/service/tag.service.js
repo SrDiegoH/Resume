@@ -13,6 +13,8 @@ class TagService {
 
     #translate = (text) => translate(this.#parameterService.getShouldTranslate(), text);
 
+    #verifyIfAllTagsCached = () => !Object.keys(this.#tags).some(tagName => this.#tags[tagName] === false);
+
     getAllCheckedTags() {
         const tagNames = Object.keys(this.#tags);
 
@@ -90,19 +92,22 @@ class TagService {
     loadTagsText(){
         document.getElementById("tags_title").innerHTML = `<h2>${this.#translate("Selecione os cursos pela tag")}</h2>`;
 
+        this.#areAllTagsCached = this.#verifyIfAllTagsCached();
+
         this.#renameSelectAllTagsToggle(this.#areAllTagsCached);
     }
 
     selectAndUnselectTags() {
+        this.#areAllTagsCached = !this.#verifyIfAllTagsCached();
+
         document.querySelectorAll(".tag")
                 .forEach(tagToggle => {
-                    tagToggle.checked = !this.#areAllTagsCached;
+                    tagToggle.checked = this.#areAllTagsCached;
+
                     this.#showByTag(tagToggle);
                 });
 
         this.#renameSelectAllTagsToggle(this.#areAllTagsCached);
-
-        this.#areAllTagsCached = !this.#areAllTagsCached;
     }
 
     #showByTag(tagToggle){
