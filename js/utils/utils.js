@@ -24,7 +24,13 @@ function httpGetRequest(url){
     return httpRequest.responseText;
 }
 
-function convertToMonthAndYear(date) {
+const translate = (shouldTranslate, text) => shouldTranslate? translations[text] : text;
+
+const sortDates = (first, second) => convertDateToMonthAndYear(first) - convertDateToMonthAndYear(second);
+
+const validateAndReturnDate = (date, otherwiseReturn) => date? convertDateToMonthAndYear(date) : otherwiseReturn;
+
+function convertDateToMonthAndYear(date) {
     const splittedDate = date.split("/");
 
     const haveDay = splittedDate.length == 3;
@@ -34,17 +40,23 @@ function convertToMonthAndYear(date) {
     return month + "/" + year;
 }
 
-function translate(text){
-    return shouldTranslate? translations[text] : text;
-}
+const sortTexts = (first, second) => first.localeCompare(second);
 
-function selectAllTagsText(isChecked){
-    return translate(isChecked? "Desmarcar todos" : "Marcar todos");
-}
+function convertToBoolean(text){
+    switch(text.toString().toLowerCase().trim()){
+        case "true":
+        case "yes":
+        case "1":
+            return true;
 
-function buildUrlWithParameters(baseUrl){
-    const language = `language=${shouldTranslate? "EN" : "PT" }`;
-    const color = `color=${colorPallet? colorPallet : "329223"}`;
+        case "false":
+        case "no":
+        case "0":
+        case null:
+        case undefined:
+            return false;
 
-    return baseUrl.origin + baseUrl.pathname + "?" + language + "&" + color.replace("#", "");
+        default: 
+            return Boolean(text);
+    }
 }

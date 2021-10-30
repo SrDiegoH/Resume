@@ -219,18 +219,6 @@ body {
     text-align: left;
 }
 
-.dynamic-color-background {
-    background-color: #329223;
-}
-
-.dynamic-color-line {
-    background-image: linear-gradient(to right, transparent, #329223, transparent);
-}
-
-.dynamic-color-text {
-    color: #329223;
-}
-
 #select_all_tags {
     display: inline-block;
     padding: 1%;

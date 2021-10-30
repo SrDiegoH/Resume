@@ -9,7 +9,7 @@
     "github": "https://github.com/SrDiegoH",
     "linkedin": "https://www.linkedin.com/in/diego-cardoso-011643152"
   },
-  "interesses": ["Games", "Animals", "Books", "Technology", "Movies", "Coffee"],
+  "interests": ["Games", "Animals", "Books", "Technology", "Movies", "Coffee"],
   "languages": [
     {
       "language": "Portuguese",
@@ -18,6 +18,10 @@
     {
       "language": "English",
       "level": 3
+    },
+    {
+      "language": "spanish",
+      "level": 1
     }
   ],
   "skills": [
