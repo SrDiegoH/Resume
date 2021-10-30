@@ -13,17 +13,15 @@ class TagService {
 
     #translate = (text) => translate(this.#parameterService.getShouldTranslate(), text);
 
-    #verifyIfAllTagsCached = () => !Object.keys(this.#tags).some(tagName => this.#tags[tagName] === false);
-
     getAllCheckedTags() {
         const tagNames = Object.keys(this.#tags);
 
-        const allCheckedTags = tagNames.filter(tagName => this.#tags[tagName] === true).join();
+        const allCheckedTags = tagNames.filter(tagName => this.#tags[tagName] === true);
 
         if(!allCheckedTags)
             return ALL_TAGS;
 
-        return tagNames.length === allCheckedTags.length? ALL_TAGS : allCheckedTags;
+        return tagNames.length === allCheckedTags.length? ALL_TAGS : allCheckedTags.join();
     }
 
     closeTags = () => document.getElementById("tags").style.visibility = "hidden";
@@ -47,7 +45,10 @@ class TagService {
         if(areTagsEmpty) {
             this.#tags = courses.reduce((tagDictionary, course) => {
 
-                course.tags.map(tagTarget => tagDictionary[tagTarget.toUpperCase()] = this.#isTagChecked(tagTarget));
+                course.tags.map(tagTarget => {
+                    if(!tagDictionary[tagTarget.toUpperCase()])
+                        return tagDictionary[tagTarget.toUpperCase()] = this.#isTagChecked(tagTarget);
+                });
 
                 return tagDictionary;
             }, {});
@@ -85,9 +86,11 @@ class TagService {
 
     #addEventOnElement = (element) => element.addEventListener("change", (event) => this.#showByTag(event.target), false);
 
-    #selectAllTagsText = (isChecked) => this.#translate(isChecked? "Desmarcar todos" : "Marcar todos");
+    #verifyIfAllTagsCached = () => !Object.keys(this.#tags).some(tagName => this.#tags[tagName] === false);
 
     #renameSelectAllTagsToggle = (areAllTagsCached) => document.getElementById("select_all_tags").value = this.#selectAllTagsText(areAllTagsCached);
+
+    #selectAllTagsText = (isChecked) => this.#translate(isChecked? "Desmarcar todos" : "Marcar todos");
 
     loadTagsText(){
         document.getElementById("tags_title").innerHTML = `<h2>${this.#translate("Selecione os cursos pela tag")}</h2>`;
